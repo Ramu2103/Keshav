@@ -1,0 +1,26 @@
+/* Custom styling to complement Bootstrap 5 */
+
+/* Smooth out the transition on hover for cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+/* Customizing the Carousel height so it acts like a Hero section */
+.carousel-item {
+    height: 60vh;
+    min-height: 400px;
+}
+
+/* Flexbox utilities to perfectly center the text inside the carousel */
+.carousel-caption-custom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
